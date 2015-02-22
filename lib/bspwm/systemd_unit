@@ -1,0 +1,16 @@
+[Unit]
+Description=BSPWM at display %i
+After=xorg@%i.service
+Requires=xorg@%i.service
+
+[Service]
+Environment=DISPLAY=:%i
+ExecStart=/usr/bin/bspwm
+Type=simple
+GuessMainPID=yes
+Restart=always
+RestartSec=10
+
+
+[Install]
+Alias=default.target
