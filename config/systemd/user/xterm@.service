@@ -1,9 +1,0 @@
-[Unit]
-Description=BSPWM at display %i
-After=xorg@%i.service
-Requires=xorg@%i.service
-
-[Service]
-Environment=DISPLAY=:0
-ExecStart=/usr/bin/xterm
-Type=simple

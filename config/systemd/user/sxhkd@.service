@@ -1,9 +1,0 @@
-[Unit]
-Description=Simple X Hotkey Daemon at display %i
-Documentation=man:sxhkd(1)
-BindsTo=xorg@%i.service
-After=xorg@%i.service
-
-[Service]
-Environment=DISPLAY=:%i
-ExecStart=/usr/bin/sxhkd
