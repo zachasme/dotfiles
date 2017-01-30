@@ -1,6 +1,22 @@
-#
-# wm independent hotkeys
-#
+##################################
+##### simple X hotkey daemon #####
+##################################
+
+# Make sxhkd reload its configuration files
+super + Escape
+	pkill -USR1 -x sxhkd
+
+# Display this bindings file as help
+super + F1
+	termite -e 'less .config/sxhkd/sxhkdrc'
+
+Print
+	gnome-screenshot
+#	maim -i $(xprop -id $(bspc query -N -n) _NET_WM_PID | cut -d' ' -f 3)
+
+####################
+##### PROGRAMS #####
+####################
 
 # terminal emulator
 super + Return
@@ -10,43 +26,54 @@ super + Return
 super + space
 	dmenu_run
 
-# make sxhkd reload its configuration files:
-super + Escape
-	pkill -USR1 -x sxhkd
 
-# Volume
+##################
+##### VOLUME #####
+##################
+
+# Raise volume
+# note: also ensures audio is enabled
 XF86AudioRaiseVolume
-	amixer -q set Master 5%+
+	amixer -q set Master 5%+ on
 
+# Lower volume
+# note: intentionally does not unmute
 XF86AudioLowerVolume
 	amixer -q set Master 5%-
 
+# Mute audio
+# note: mute always sets audio off (intentially no toggle)
 XF86AudioMute
-	amixer -q set Master toggle
+	amixer -q set Master off
 
-# Asus keyboard backlight control
+
+######################
+##### BRIGHTNESS #####
+######################
+
 XF86KbdBrightnessUp
 	asus-kbd-backlight up
 
 XF86KbdBrightnessDown
 	asus-kbd-backlight down
 
-XF86MonBrightnessUp
-	xbacklight -inc 20
+{_,shift + }XF86MonBrightnessUp
+	xbacklight -inc {20, 1}
 
-XF86MonBrightnessDown
-	xbacklight -dec 20
+{_,shift + }XF86MonBrightnessDown
+	xbacklight -dec {20, 1}
 
 
-#
-# bspwm hotkeys
-#
+#################
+##### BSPWM #####
+#################
 
 # sigstop
-super + alt + Pause
+super + Pause
 	kill -SIGSTOP $(xprop -id $(bspc query -N -n) _NET_WM_PID | cut -d' ' -f 3)
 
-super + alt + shift + Pause
+# sigcont
+super + shift + Pause
 	kill -SIGCONT $(xprop -id $(bspc query -N -n) _NET_WM_PID | cut -d' ' -f 3)
 
 # quit bspwm normally
