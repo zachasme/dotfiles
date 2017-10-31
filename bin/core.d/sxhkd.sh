@@ -1,3 +1,6 @@
+# install
+install sxhkd
+# configure
 link sxhkd
-# reload config
+# reload configuration
 pkill -USR1 -x sxhkd
