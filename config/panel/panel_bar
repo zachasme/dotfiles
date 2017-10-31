@@ -6,23 +6,31 @@
 
 num_mon=$(bspc query -M | wc -l)
 
+# read from stdin
 while read -r line ; do
+  bat_cap=$(cat /sys/class/power_supply/BAT0/capacity)
+  if (( bat_cap > 10 )); then
+  	color_bg=$COLOR_SYS_BG
+  else
+    color_bg=$COLOR_LOW_BG
+  fi
+
 	case $line in
 		B*)
 			# battery output
-			bat="%{F$COLOR_SYS_FG}%{B$COLOR_SYS_BG} ${line#?} %{B-}%{F-}"
+			bat="%{F$COLOR_SYS_FG}%{B$color_bg} ${line#?} %{B-}%{F-}"
 			;;
 		E*)
 			# wifi output
-			wif="%{F$COLOR_SYS_FG}%{B$COLOR_SYS_BG} ${line#?} %{B-}%{F-}"
+			wif="%{F$COLOR_SYS_FG}%{B$color_bg} ${line#?} %{B-}%{F-}"
 			;;
 		S*)
 			# clock output
-			sys="%{F$COLOR_SYS_FG}%{B$COLOR_SYS_BG} ${line#?} %{B-}%{F-}"
+			sys="%{F$COLOR_SYS_FG}%{B$color_bg} ${line#?} %{B-}%{F-}"
 			;;
 		T*)
 			# xtitle output
-			title="%{F$COLOR_TITLE_FG}%{B$COLOR_TITLE_BG} ${line#?} %{B-}%{F-}"
+			title="%{F$COLOR_TITLE_FG}%{B$color_bg} ${line#?} %{B-}%{F-}"
 			;;
 		W*)
 			# bspwm's state
@@ -86,12 +94,17 @@ while read -r line ; do
 						;;
 					[LTG]*)
 						# layout, state and flags
-						wm="${wm}%{F$COLOR_STATE_FG}%{B$COLOR_STATE_BG} ${name} %{B-}%{F-}"
+						wm="${wm}%{F$COLOR_STATE_FG}%{B$color_bg} ${name} %{B-}%{F-}"
 						;;
 				esac
 				shift
 			done
 			;;
 	esac
-	printf "%s\n" "%{l}${wm}%{c}${title}%{r}${wif} // ${bat} // ${sys}"
+	i=0
+	#while [[ $i -le 1 ]]; do
+	  printf "%s" "%{l}${wm}%{c}${title}%{r}${wif} // ${bat} // ${sys}"
+		let i=i+1
+	#done
+	printf "\n"
 done
