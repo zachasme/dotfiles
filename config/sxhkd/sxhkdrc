@@ -58,11 +58,10 @@ XF86KbdBrightnessDown
 	asus-kbd-backlight down
 
 {_,shift + }XF86MonBrightnessUp
-	xbacklight -inc {20, 1}
+  brightnessctl set {20, 1}%+
 
 {_,shift + }XF86MonBrightnessDown
-	xbacklight -dec {20, 1}
-
+  brightnessctl set {20, 1}%-
 
 #################
 ##### BSPWM #####
