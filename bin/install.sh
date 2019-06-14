@@ -3,6 +3,11 @@
 # error hanndling
 set -e
 
+if [ $(id -u) = 0 ]; then
+   echo "This script must NOT be run as root" 
+   exit 1
+fi
+
 # globals
 bindir=$(dirname $(readlink -f $0))
 srcdir=$bindir/../config

@@ -1,8 +1,6 @@
 [options]
 font = Inconsolata 10
 
-# Solarized light color scheme
-
 [colors]
 foreground = #ffffff
 foreground_bold = #073642
