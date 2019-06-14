@@ -1,2 +1,1 @@
-# compton is a compositor for X
-link systemd
+link systemd/user/ssh-agent.service $HOME/.config/systemd/user

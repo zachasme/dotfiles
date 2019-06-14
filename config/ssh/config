@@ -1,6 +1,0 @@
-# remember passphrase
-Host *
-  AddKeysToAgent yes
-
-# include configs in ~/.ssh/config.d
-Include config.d/*

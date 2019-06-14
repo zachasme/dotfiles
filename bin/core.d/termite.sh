@@ -1,1 +1,2 @@
+install termite
 link termite
