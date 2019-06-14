@@ -4,45 +4,44 @@
 set -e
 
 # globals
-BIN_DIR=$(dirname $(readlink -f $0))
-CONFIG_DIR=$BIN_DIR/../config
-
-# helper function: enforce pacaur installed
-function require_aurman {
-  if ! which aurman &> /dev/null; then
-    echo 'INSTALL AURMAN'
-    echo 'https://aur.archlinux.org/packages/aurman/'
-    exit 1
-  fi
-}
+bindir=$(dirname $(readlink -f $0))
+srcdir=$bindir/../config
+cfgdir=$HOME/.config
 
 # helper function: install package
 function install {
-  local package="$1"
-  echo -n "  installing $package..."
+  local packages=$@
+  echo -n "  installing $packages..."
 
-  if pacman --query --info $package &> /dev/null; then
+  if pacman --query --info $packages &> /dev/null; then
     echo " already installed, skipping"
   else
     # --needed      do not reinstall up to date packages
     # --noconfirm   do not ask for any confirmation
     # --quiet       show less information for query and search
-    sudo pacman -Syu --needed --noconfirm --quiet $package
+    sudo pacman -Syu --needed --noconfirm --quiet $packages
     echo " done"
   fi
 }
 
 # helper function: install pacaur package
 function install_aur {
-  local package="$1"
-  echo -n "  installing $package..."
+  if ! which aurman &> /dev/null; then
+    echo ''
+    echo 'Error: Aurman is required to install aur pacakges'
+    echo 'https://aur.archlinux.org/packages/aurman/'
+    exit 1
+  fi
 
-  if pacman --query --info $package &> /dev/null; then
+  local packages=$@
+  echo -n "  installing $packages from aur..."
+
+  if pacman --query --info $packages &> /dev/null; then
     echo " already installed, skipping"
   else
     # --needed      do not reinstall up to date packages
     # --noconfirm   do not ask for any confirmation
-    aurman -Syu --needed --noconfirm $package
+    aurman -Syu --needed --noconfirm $packages
     echo " done"
   fi
 }
@@ -51,7 +50,7 @@ function install_aur {
 function link {
   local path="$1"
   local dirname=$(basename $path)
-  local destination="${2:-$HOME/.config}"
+  local destination="${2:-$cfgdir}"
   
   echo -n "  linking $dirname..."
 
@@ -59,7 +58,7 @@ function link {
   rm -rf $destination/$dirname
 
   # install
-  ln -s $CONFIG_DIR/$path $destination/$dirname
+  ln -s $srcdir/$path $destination/$dirname
 
   echo " done"
 }
@@ -70,7 +69,6 @@ case $(cat /etc/machine-id) in
     # office desktop
     2bf828620e3943068b85822a7b434766 )
         MODEL="office desktop"
-        require_aurman
         ;;
     # unknown computer
     * )
@@ -83,7 +81,7 @@ echo "Detected model: ${MODEL}"
 echo ""
 
 # iterate over installation shell scripts
-for file in $BIN_DIR/core.d/*
+for file in $bindir/core.d/*
 do
   echo "* Sourcing $(basename $file):"
   source "$file"

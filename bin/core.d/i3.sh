@@ -1,3 +1,2 @@
-install i3-wm
-install i3status
-link i3
+install i3-wm i3status
+link "i3"

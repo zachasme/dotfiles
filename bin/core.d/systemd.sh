@@ -1,1 +1,1 @@
-link systemd/user/ssh-agent.service $HOME/.config/systemd/user
+link "systemd/user/ssh-agent.service" "$cfgdir/systemd/user"

@@ -1,2 +1,2 @@
 install termite
-link termite
+link "termite"

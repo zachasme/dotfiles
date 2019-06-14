@@ -1,7 +1,11 @@
+# Zacharias' Arch Linux dotfiles
+
 Software:
 
-* bspwm (window manager)
+* i3 (window manager)
 * ranger (file manager)
+* ssh (add keys to agent)
+* systemd (add ssh agent)
 
 ### Usage
 
