@@ -70,6 +70,14 @@ function link {
   echo " done"
 }
 
+function setshell {
+  local wanted="$1"
+  if [ "$SHELL" != $wanted ]; then
+      echo "Current shell is $SHELL, changing to $wanted"
+      chsh -s $wanted
+  fi
+}
+
 # detect which computer script is run on
 device=$(cat /etc/machine-id)
 
