@@ -33,7 +33,7 @@ function install {
 }
 
 # helper function: install pacaur package
-function install_aurman {
+function install_aur {
   local package="$1"
   echo -n "  installing $package..."
 
@@ -42,8 +42,7 @@ function install_aurman {
   else
     # --needed      do not reinstall up to date packages
     # --noconfirm   do not ask for any confirmation
-    # --quiet       show less information for query and search
-    aurman -Syu --needed --noconfirm --quiet $package
+    aurman -Syu --needed --noconfirm $package
     echo " done"
   fi
 }

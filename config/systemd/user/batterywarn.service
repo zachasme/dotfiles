@@ -1,9 +1,0 @@
-[Unit]
-Description=Check battery and display warning
-
-[Service]
-User=zach
-Environment=DISPLAY=:0
-Type=oneshot
-ExecStartPre=
-ExecStart=/home/zach/git/dotfiles/lib/low-battery
