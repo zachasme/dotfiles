@@ -1,0 +1,1 @@
+link ".pam_environment" "$HOME"
