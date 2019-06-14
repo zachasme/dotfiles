@@ -4,13 +4,15 @@
 set -e
 
 if [ $(id -u) = 0 ]; then
-   echo "This script must NOT be run as root" 
+   echo "Do NOT run this script as root" 
    exit 1
 fi
 
 # globals
-bindir=$(dirname $(readlink -f $0))
-srcdir=$bindir/../config
+gitdir=$(dirname $(readlink -f $0))
+bindir=$gitdir/bin
+srcdir=$gitdir/config
+devdir=$gitdir/devices
 cfgdir=$HOME/.config
 
 # helper function: install package
@@ -68,29 +70,18 @@ function link {
   echo " done"
 }
 
-
 # detect which computer script is run on
-case $(cat /etc/machine-id) in
-    # office desktop
-    2bf828620e3943068b85822a7b434766 )
-        MODEL="office desktop"
-        ;;
-    # unknown computer
-    * )
-        echo "Unknown model"
-        exit 1
-        ;;
-esac
+device=$(cat /etc/machine-id)
 
-echo "Detected model: ${MODEL}"
-echo ""
+printf "Detected device id: ${device}\n\n"
 
-# iterate over installation shell scripts
-for file in $bindir/core.d/*
-do
-  echo "* Sourcing $(basename $file):"
-  source "$file"
-  echo ""
-done
+# ensure device has configuration
+if [ ! -f "$devdir/$device.sh" ]; then
+    >&2 echo "ERROR: No configuration found. Add it to devices directory."
+    exit 1;
+fi
+
+# run device configutation
+source "$devdir/$device.sh"
 
 echo "Installation complete!"

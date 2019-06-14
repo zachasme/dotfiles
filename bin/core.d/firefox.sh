@@ -1,1 +1,0 @@
-install firefox-developer-edition

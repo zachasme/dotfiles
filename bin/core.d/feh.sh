@@ -1,1 +1,0 @@
-install feh archlinux-wallpaper

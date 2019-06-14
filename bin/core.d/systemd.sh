@@ -1,1 +1,0 @@
-link "systemd/user/ssh-agent.service" "$cfgdir/systemd/user"
