@@ -64,6 +64,9 @@ function link {
   # clean
   rm -rf $destination/$dirname
 
+  # make sure destination exists
+  mkdir -p $destination
+
   # install
   ln -s $srcdir/$path $destination/$dirname
 

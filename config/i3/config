@@ -173,6 +173,7 @@ assign [class="TopTracker"] 5
 for_window [class="TopTracker"] floating disable
 
 # Start programs
+exec dex -a
 exec compton
 exec firefox-developer-edition
 exec toptracker
