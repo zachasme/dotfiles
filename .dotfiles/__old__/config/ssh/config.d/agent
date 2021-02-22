@@ -1,0 +1,3 @@
+# remember passphrase
+Host *
+  AddKeysToAgent yes
