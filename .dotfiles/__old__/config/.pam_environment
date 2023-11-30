@@ -1,6 +1,0 @@
-SSH_AUTH_SOCK DEFAULT="${XDG_RUNTIME_DIR}/ssh-agent.socket"
-XKB_DEFAULT_LAYOUT=dk
-CXX=/usr/bin/clang++
-CC=/usr/bin/clang
-BROWSER=firefox-developer-edition
-TERMINAL=termite
