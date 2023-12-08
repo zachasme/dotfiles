@@ -23,6 +23,8 @@ plugins=(git)
 alias rcat=$(which cat)
 alias cat=$(which  bat)
 
+cdpath($HOME/dev)
+
 # Oh-My-Zsh
 
 ZSH_CACHE_DIR=$HOME/.cache/oh-my-zsh
