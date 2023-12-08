@@ -23,7 +23,7 @@ plugins=(git)
 alias rcat=$(which cat)
 alias cat=$(which  bat)
 
-cdpath($HOME/dev)
+cdpath=($HOME/dev)
 
 # Oh-My-Zsh
 
