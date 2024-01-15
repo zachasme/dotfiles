@@ -18,5 +18,7 @@
 - `ssh`: Set up new ssh keys and add to github
 
 ```sh
-~ zsh
+~ echo "export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket" > ~/.zprofile
+~ git config --global user.name "Zacharias Knudsen" 
+~ git config --global user.email "z@chari.as"
 ```
