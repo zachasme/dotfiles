@@ -1,0 +1,187 @@
+# base
+base
+base-devel
+linux
+linux-firmware
+man-db
+man-pages
+paru
+
+# xorg, shell, terminal, wm
+kitty
+dmenu
+i3-wm
+i3blocks
+i3lock
+i3status
+lightdm
+lightdm-gtk-greeter
+xorg-server
+zsh
+zsh-theme-powerlevel10k
+
+# utils
+bat
+nano
+ranger
+vi
+vim
+
+# apps
+1password
+chromium
+discord
+firefox
+inkscape
+signal-desktop
+steam
+thunderbird
+tidal-hifi-bin
+visual-studio-code-bin
+vlc
+
+# dev
+clang
+cmake
+docker
+docker-compose
+git
+heroku-cli-bin
+mariadb
+mercurial
+postgis
+postgresql
+
+# node
+nodejs
+npm
+yarn
+
+# python
+python
+python-poetry
+
+# ruby
+chruby
+ruby-install
+
+# rust
+rust
+
+# aur mantainance related
+aws-iam-authenticator-bin
+lgogdownloader
+
+# WIP:
+alsa-utils 1.2.11-1
+arandr 0.1.11-3
+bind 9.18.26-2
+bleachbit 4.6.0-2
+blueman 2.4.1-2
+bluez 5.75-1
+bluez-utils 5.75-1
+ccid 1.5.5-1
+cryptsetup 2.7.2-1
+cvs 1.11.23-15
+dbeaver 24.0.3-1
+device-mapper 2.03.23-3
+dhclient 4.4.3.P1-3
+dhcpcd 10.0.6-1
+dialog 1:1.3_20240307-2
+diffutils 3.10-1
+dmidecode 3.5-1
+dotnet-runtime 8.0.4.sdk104-1
+dunst 1.11.0-1
+e2fsprogs 1.47.0-2
+efibootmgr 18-3
+exfat-utils 1.4.0-2
+expac 10-10
+feh 3.10.2-1
+flatpak 1:1.15.8-1
+fuseiso 20070708-8
+gdal 3.8.5-3
+gdb 14.2-2
+ghostscript 10.03.0-2
+gnome-screenshot 41.0+r25+g45f08f0-1
+grim 1.4.1-1
+hunspell-en_au 2020.12.07-5
+hunspell-en_ca 2020.12.07-5
+imagemagick 7.1.1.32-1
+inetutils 2.5-1
+intel-gpu-tools 1.27-2
+intel-ucode 20240312-1
+iucode-tool 2.3.1-5
+iw 6.7-1
+jdk-openjdk 22.0.1.u0-1
+jdk8-openjdk 8.412.u08-1
+jfsutils 1.1.15-9
+lhasa 0.3.1-3
+lib32-alsa-plugins 1.2.7.1-2
+lib32-freetype2 2.13.2-1
+lib32-sdl12-compat 1.2.68-1
+lib32-vulkan-icd-loader 1.3.279-1
+lib32-vulkan-intel 1:24.0.6-2
+libiptcdata 1.0.5-3
+linux-headers 6.8.9.arch1-1
+linux-lts 6.6.30-1
+logrotate 3.21.0-2
+lvm2 2.03.23-3
+mdadm 4.3-2
+mkvtoolnix-gui 83.0-1
+namcap 3.5.2-2
+nautilus 46.1-1
+netctl 1.29-1
+noto-fonts 1:24.5.1-1
+noto-fonts-emoji 1:2.042-1
+nss-mdns 0.15.1-1
+ntfs-3g 2022.10.3-1
+obs-studio 30.1.2-1
+ocaml 5.1.1-1
+oh-my-zsh-git r7151.fd01fd66c-1
+openssh 9.7p1-2
+otf-font-awesome 6.5.2-1
+p7zip 1:17.05-2
+pacman-contrib 1.10.5-1
+paprefs 1.2-1
+pavucontrol 1:5.0+r66+gc330506-1
+pcsc-tools 1.7.1-1
+pgxnclient 1.3.2-1
+picom 11.2-1
+pngcrush 1.8.13-3
+pulse-secure 22.7r1.0_b28369-1
+pulseaudio 17.0-3
+pulseaudio-alsa 1:1.2.7.1-2
+pulseaudio-bluetooth 17.0-3
+puma-dev-git v0.18.3.r0.gdb9ec15-1
+reflector 2023-2
+reiserfsprogs 3.6.27-4
+s-nail 14.9.24-2
+ssh-agent-env-var 1.0.0-1
+sshfs 3.7.3-1
+sysfsutils 2.1.1-1
+terminus-font 4.49.1-6
+thunar 4.18.10-2
+tldr 3.2.0-3
+trash-cli 0.24.4.17-1
+ttf-dejavu 2.37+18+g9b5d1b2f-7
+ttf-inconsolata 1:3.000-3
+ttf-liberation 2.1.5-1
+unrar 1:7.0.8-1
+unzip 6.0-20
+upower 1.90.4-1
+usbutils 017-1
+vulkan-intel 1:24.0.6-2
+watchman-bin 2024.04.15.00-1
+wget 1.24.5-2
+wine 9.8-1
+wine-gecko 2.47.4-1
+wine-mono 9.1.0-1
+wireshark-cli 4.2.4-2
+wireshark-qt 4.2.4-2
+wmname 0.1-5
+wpa_actiond 1.4-4
+wpa_supplicant 2:2.10-8
+xclip 0.13-5
+xf86-video-intel 1:2.99.917+923+gb74b67f0-2
+xfsprogs 6.7.0-1
+zip 3.0-11
