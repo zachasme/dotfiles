@@ -14,6 +14,22 @@ systemd-numlockontty
 reflector
 vim
 
+# apps
+1password
+anki-bin
+chromium
+discord
+firefox
+gimp
+libreoffice-fresh
+obs-studio
+signal-desktop
+steam
+thunderbird
+tidal-hifi-bin
+visual-studio-code-bin
+vlc
+
 # x11
 dmenu
 i3-wm
@@ -51,22 +67,6 @@ zip
 cups
 samsung-unified-driver
 
-# apps
-1password
-anki-bin
-chromium
-discord
-firefox
-gimp
-libreoffice-fresh
-obs-studio
-signal-desktop
-steam
-thunderbird
-tidal-hifi-bin
-visual-studio-code-bin
-vlc
-
 # development
 cmake
 docker
@@ -81,6 +81,9 @@ postgis
 postgresql
 postgresql-old-upgrade
 redis
+
+# node
+nodejs
 
 # java
 jdk-openjdk
