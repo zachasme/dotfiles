@@ -5,12 +5,11 @@ base-devel
 linux
 linux-firmware
 lvm2
-mkinitcpio-numlock
 pacman-contrib
 paru
 polkit
 pulseaudio
-systemd-numlockontty
+systemd-numlockontty # numlock on boot (console only)
 reflector
 vim
 
@@ -37,6 +36,7 @@ i3blocks
 i3lock
 i3status
 kitty
+numlockx # numlock on by default
 nvidia
 oh-my-zsh-git
 xf86-video-vesa
@@ -102,6 +102,6 @@ unityhub
 
 # aur
 gog-unreal-tournament-goty
-lgogdownloader
+lgogdownloader-git
 puma-dev-git
 wxwidgets-gtk3
