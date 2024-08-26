@@ -1,3 +1,5 @@
+# run `pacman -Qe`
+
 # system
 amd-ucode
 base
