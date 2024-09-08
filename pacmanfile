@@ -31,22 +31,23 @@ tidal-hifi-bin
 visual-studio-code-bin
 vlc
 
+# gnome
+gdm
+gnome-control-center
+gnome-shell
+nautilus
+seahorse
+
 # x11
-dmenu
-i3-wm
-i3blocks
-i3lock
-i3status
+alacritty
 kitty
 numlockx # numlock on by default
 nvidia
-oh-my-zsh-git
+ulauncher
 xf86-video-vesa
 xfce-polkit
 xorg-server
 xorg-xinit
-zsh
-zsh-theme-powerlevel10k
 
 # fonts
 powerline-fonts
@@ -54,12 +55,16 @@ terminus-font
 ttf-inconsolata
 
 # utilities
+bash-completion
 bat
+github-cli
 man-db
 man-pages
 openssh
 pavucontrol
 ranger
+sqlitebrowser
+stripe-cli-bin
 trash-cli
 unzip
 wget
@@ -86,6 +91,7 @@ redis
 
 # node
 nodejs
+yarn
 
 # java
 jdk-openjdk
