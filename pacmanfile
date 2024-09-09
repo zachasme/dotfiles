@@ -55,6 +55,7 @@ xorg-xinit
 powerline-fonts
 terminus-font
 ttf-inconsolata
+ttf-meslo-nerd
 
 # utilities
 bash-completion
