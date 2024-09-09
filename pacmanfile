@@ -7,6 +7,7 @@ base-devel
 linux
 linux-firmware
 lvm2
+networkmanager
 pacman-contrib
 paru
 polkit
@@ -14,6 +15,7 @@ pulseaudio
 systemd-numlockontty # numlock on boot (console only)
 reflector
 vim
+zellij
 
 # apps
 1password
