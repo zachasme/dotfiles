@@ -1,5 +1,5 @@
 ```bash
-git clone --bare git@github.com:zachasme/dotfiles.git ~/dev/dotfiles
-alias dotfile='git --git-dir=~/dev/dotfiles --work-tree=~'
+git clone --bare git@github.com:zachasme/dotfiles.git $HOME/dev/dotfiles
+alias dotfile='git --git-dir=$HOME/dev/dotfiles --work-tree=$HOME'
 dotfile checkout --force
 ```
