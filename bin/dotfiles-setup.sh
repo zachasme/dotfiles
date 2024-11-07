@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Usage:
-#   source <(curl -sL https://raw.githubusercontent.com/zachasme/dotfiles/refs/heads/main/bin/dotfiles-setup.sh)
+#   source <(curl -sL https://raw.github.com/zachasme/dotfiles/main/bin/dotfiles-setup.sh)
 
 GIT_DIR=${1:-dev/dotfiles}
 
