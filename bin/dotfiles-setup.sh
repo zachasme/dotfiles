@@ -1,5 +1,5 @@
 # Usage:
-#   wget -qO- https://raw.githubusercontent.com/zachasme/dotfiles/refs/heads/main/bin/dotfiles.sh | bash
+#   source <(curl -sL https://raw.githubusercontent.com/zachasme/dotfiles/refs/heads/main/bin/dotfiles-setup.sh)
 
 GIT_DIR=${1:-dotfiles}
 
