@@ -1,7 +1,4 @@
+Set up using
 ```bash
-git clone --bare git@github.com:zachasme/dotfiles.git $HOME/dev/dotfiles
-git --git-dir=$HOME/dev/dotfiles --work-tree=$HOME restore -s main -- .bashrc
-source .bashrc
-dotfile config --local status.showUntrackedFiles no
-dotfile checkout --force
+source <(curl -sL https://raw.github.com/zachasme/dotfiles/main/bin/dotfiles-setup.sh)
 ```
