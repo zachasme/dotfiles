@@ -9,11 +9,13 @@ alias ls='eza -lh --group-directories-first --icons'
 alias grep='grep --color=auto'
 alias rcat=$(which cat)
 alias cat=$(which  bat)
+
 alias g='git'
 alias gs='git status'
-alias gd='git diff'
-alias gc='git commit'
-alias ga='git add'
+alias gcm='git commit -m'
+alias gcam='git commit -a -m'
+alias gcad='git commit -a --amend'
+
 alias srcinfo='makepkg --printsrcinfo > .SRCINFO'
 alias dotfile='git --git-dir=$HOME/dev/dotfiles --work-tree=$HOME'
 
