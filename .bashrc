@@ -31,8 +31,14 @@ export PATH="$PATH:$GEM_HOME/bin"
 
 source /usr/share/chruby/chruby.sh
 source /usr/share/chruby/auto.sh
-chruby ruby-3.3.5
+chruby ruby-3.4.1
 
 export CDPATH=$HOME/dev
 
-source .bashrc2
+# History control
+shopt -s histappend
+HISTCONTROL=ignoreboth
+HISTSIZE=32768
+HISTFILESIZE="${HISTSIZE}"
+
+source $HOME/.bashrc2

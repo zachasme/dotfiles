@@ -6,3 +6,55 @@
 	format = ssh
 [commit]
 	gpgsign = true
+
+# https://blog.gitbutler.com/how-git-core-devs-configure-git/
+
+# clearly makes git better
+
+[column]
+	ui = auto
+[branch]
+	sort = -committerdate
+[tag]
+	sort = version:refname
+[init]
+	defaultBranch = main
+[diff]
+	algorithm = histogram
+	colorMoved = plain
+	mnemonicPrefix = true
+	renames = true
+[push]
+	default = simple
+	autoSetupRemote = true
+	followTags = true
+[fetch]
+	prune = true # only delete remote tracking branches, *not* the local copy
+	pruneTags = true
+	all = true
+
+# why the hell not?
+
+[help]
+	autocorrect = prompt
+[commit]
+	verbose = true # put the whole diff output in prompt for you to reference as you write your commit message
+[rerere]
+	enabled = true # will make sure it records the before and after states of rebase conflicts
+	autoupdate = true # will automatically re-apply the resolutions if it sees them again
+[core]
+	excludesfile = ~/.gitignore # in addition to defaults: ~/git/ignore and ~/.config/git/ignore
+[rebase]
+	autoSquash = true
+	autoStash = true
+	updateRefs = true
+
+# a matter of taste (uncomment if you dare)
+
+[core]
+	# fsmonitor = true
+	# untrackedCache = true
+[merge]
+	conflictstyle = zdiff3 # show what the block looked like before either of you changed it
+[pull]
+	rebase = true # rebase only
