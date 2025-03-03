@@ -1,7 +1,7 @@
 [user]
 	name = Zacharias Knudsen
 	email = z@chari.as
-	signingkey = /home/zach/.ssh/id_ed25519.pub
+	signingkey = ~/.ssh/id_ed25519.pub
 [gpg]
 	format = ssh
 [commit]

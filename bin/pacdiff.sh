@@ -1,5 +1,11 @@
 #!/usr/bin/env bash
 
-cat pacmanfile | sort
+expected=$(cat pacmanfile | grep -o '^[^#]*' | sort)
+actual=$(pacman -Qqe | sort)
 
-diff --color <(pacman -Qqe) <(cat pacmanfile | grep -o '^[^#]*' | sort) 
+echo "# Missing packages"
+comm -23 <(echo "$expected") <(echo "$actual")
+echo ""
+echo "# Extra packages"
+comm -13 <(echo "$expected") <(echo "$actual") 
+
