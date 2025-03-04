@@ -1,0 +1,34 @@
+# [ BARE NECESSITIES ]
+base
+base-devel
+nvim
+openssh
+vim
+wget
+
+# [ SHELL EXTRAS ]
+bash-completions
+
+# [ SHELL TOOLS ]
+bat # `cat(1)` clone with syntax highlighting and git integration
+eza # `ls(1)`` replacement with color and icons
+fzf # fuzzy finding files and history
+
+# [ DESKTOP APPS ]
+1password
+chromium
+discord
+firefox
+
+# [ CLI APPS ]
+bitwarden-cli
+
+# [ DEVELOPMENT TOOLS ]
+docker
+github-cli
+heroku-cli-bin # (AUR)
+mise
+postgresql
+sqlitebrowser
+stripe-cli-bin # (AUR)
+visual-studio-code-bin
