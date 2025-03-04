@@ -7,7 +7,6 @@
 
 source ~/.config/bash/aliases
 source ~/.config/bash/init
-source ~/.config/bash/ruby
 source ~/.config/bash/shell
 
 export BROWSER=firefox
