@@ -13,6 +13,7 @@ HISTFILESIZE="${HISTSIZE}" # afterwards, history is truncated to $HISTFILESIZE
 # erasedups   : purge prior instances of line from history when adding line
 HISTCONTROL="ignoreboth:erasedups"
 
+HISTTIMEFORMAT="%x %X "
 HISTIGNORE="ls:history"
 
 # If a command is issued that can’t be executed as a normal command,
