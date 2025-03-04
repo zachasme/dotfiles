@@ -26,7 +26,7 @@ bitwarden-cli
 # [ DEVELOPMENT TOOLS ]
 docker
 github-cli
-heroku-cli-bin # (AUR)
+heroku-cli # (AUR)
 mise
 postgresql
 sqlitebrowser

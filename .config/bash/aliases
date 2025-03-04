@@ -1,3 +1,4 @@
+alias vim='nvim'
 alias ls='eza -lh --group-directories-first --icons'
 alias grep='grep --color=auto'
 alias rcat=$(which cat)
