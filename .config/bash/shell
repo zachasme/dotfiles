@@ -1,0 +1,24 @@
+PS1='[\u@\h \W]\$ '
+
+# History control (commits to history when shell exits)
+# append to history, don't overwrite
+shopt -s histappend
+
+HISTSIZE=32768 # on shell exit, $HISTSIZE lines are appended to history
+HISTFILESIZE="${HISTSIZE}" # afterwards, history is truncated to $HISTFILESIZE
+
+# ignorespace : do not put lines starting with space in history.
+# ignoredups  : do not put duplicate lines in history.
+# ignoreboth  : both of the above
+# erasedups   : purge prior instances of line from history when adding line
+HISTCONTROL="ignoreboth:erasedups"
+
+HISTIGNORE="ls:history"
+
+# If a command is issued that can’t be executed as a normal command,
+# and the command is the name of a directory,
+# perform the cd command to that directory. 
+shopt -s autocd
+
+# `cd` search paths, in addititon to the current directory
+CDPATH=$HOME/dev

@@ -5,40 +5,12 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-alias ls='eza -lh --group-directories-first --icons'
-alias grep='grep --color=auto'
-alias rcat=$(which cat)
-alias cat=$(which  bat)
+source ~/.config/bash/aliases
+source ~/.config/bash/ruby
+source ~/.config/bash/shell
 
-alias g='git'
-alias gs='git status'
-alias gcm='git commit -m'
-alias gcam='git commit -a -m'
-alias gcad='git commit -a --amend'
-
-alias srcinfo='makepkg --printsrcinfo > .SRCINFO'
-alias dotfile='git --git-dir=$HOME/dev/dotfiles --work-tree=$HOME'
-
-PS1='[\u@\h \W]\$ '
-shopt -s autocd
 
 export BROWSER=firefox
 export THOR_MERGE="code --wait --diff $1 $2"
-export XDG_DOWNLOAD_DIR="$HOME/Downloads"
 
-export GEM_HOME="$(gem env user_gemhome)"
-export PATH="$PATH:$GEM_HOME/bin"
-
-source /usr/share/chruby/chruby.sh
-source /usr/share/chruby/auto.sh
-chruby ruby-3.4.1
-
-export CDPATH=$HOME/dev
-
-# History control
-shopt -s histappend
-HISTCONTROL=ignoreboth
-HISTSIZE=32768
-HISTFILESIZE="${HISTSIZE}"
-
-source $HOME/.bashrc2
+[[ -f ~/.bashrc2 ]] && . ~/.bashrc2

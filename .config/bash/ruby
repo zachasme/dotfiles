@@ -1,0 +1,6 @@
+export GEM_HOME="$(gem env user_gemhome)"
+export PATH="$PATH:$GEM_HOME/bin"
+
+source /usr/share/chruby/chruby.sh
+source /usr/share/chruby/auto.sh
+chruby ruby-3.4.1
