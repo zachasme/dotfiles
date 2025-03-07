@@ -1,10 +1,15 @@
 # [ BARE NECESSITIES ]
 base
 base-devel
+git
 neovim
 openssh
 vim
 wget
+
+# [ GNOME ]
+baobab
+gnome-shell
 
 # [ SHELL EXTRAS ]
 bash-completion
@@ -17,6 +22,7 @@ fzf # fuzzy finding files and history
 
 # [ DESKTOP APPS ]
 1password
+alacritty
 chromium
 discord
 firefox
