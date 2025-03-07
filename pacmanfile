@@ -33,15 +33,12 @@ steam
 thunderbird
 vlc
 
-# [ CLI APPS ]
-bitwarden-cli
-neovim
-
 # [ DEVELOPMENT TOOLS ]
 docker
 github-cli
 heroku-cli # (AUR)
 mise
+neovim
 postgresql
 sqlitebrowser
 stripe-cli-bin # (AUR)
