@@ -1,13 +1,14 @@
 # [ BARE NECESSITIES ]
 base
 base-devel
-nvim
+neovim
 openssh
 vim
 wget
 
 # [ SHELL EXTRAS ]
-bash-completions
+bash-completion
+ttf-cascadia-mono-nerd
 
 # [ SHELL TOOLS ]
 bat # `cat(1)` clone with syntax highlighting and git integration
