@@ -2,14 +2,16 @@
 base
 base-devel
 git
-neovim
 openssh
+unzip
 vim
 wget
+zip
 
-# [ GNOME ]
+# [ GNOME / XORG ]
 baobab
 gnome-shell
+xorg-server
 
 # [ SHELL EXTRAS ]
 bash-completion
@@ -19,6 +21,7 @@ ttf-cascadia-mono-nerd
 bat # `cat(1)` clone with syntax highlighting and git integration
 eza # `ls(1)`` replacement with color and icons
 fzf # fuzzy finding files and history
+zellij
 
 # [ DESKTOP APPS ]
 1password
@@ -26,9 +29,13 @@ alacritty
 chromium
 discord
 firefox
+steam
+thunderbird
+vlc
 
 # [ CLI APPS ]
 bitwarden-cli
+neovim
 
 # [ DEVELOPMENT TOOLS ]
 docker
