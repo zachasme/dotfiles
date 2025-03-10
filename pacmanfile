@@ -9,13 +9,9 @@ wget
 zip
 
 # [ GNOME / XORG ]
-baobab
 gdm
-gnome-keyring
 gnome-shell
 nautilus
-sushi
-tecla
 xorg-server
 
 # [ SHELL EXTRAS ]
