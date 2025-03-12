@@ -57,7 +57,6 @@ loupe # image viewer
 nautilus # file manager
 simple-scan # document scanner
 snapshot # camera
-totem # video player
 
 # [ SHELL EXTRAS ]
 bash-completion
