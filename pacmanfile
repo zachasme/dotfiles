@@ -5,6 +5,8 @@ git
 bind # `host` command
 linux
 linux-firmware
+man-db
+man-pages
 openssh
 reflector
 unzip
@@ -22,8 +24,40 @@ xclip
 xorg-server
 
 # [ GNOME CORE APPS ]
-nautilus # gnome file manager
-totem # gnome video player
+gnome-backgrounds
+gnome-calculator
+gnome-calendar
+gnome-characters
+gnome-clocks
+gnome-color-manager
+gnome-connections
+gnome-console
+gnome-contacts
+gnome-control-center
+gnome-disk-utility
+gnome-font-viewer
+gnome-keyring
+gnome-logs
+gnome-maps
+gnome-menus
+gnome-music
+gnome-remote-desktop
+gnome-screenshot
+gnome-session
+gnome-settings-daemon
+gnome-shell-extensions
+gnome-software
+gnome-system-monitor
+gnome-text-editor
+gnome-tour
+gnome-user-docs
+gnome-user-share
+gnome-weather
+loupe # image viewer
+nautilus # file manager
+simple-scan # document scanner
+snapshot # camera
+totem # video player
 
 # [ SHELL EXTRAS ]
 bash-completion
@@ -62,6 +96,10 @@ visual-studio-code-bin
 nodejs
 npm
 yarn
+
+# [ PYTHON ]
+python
+python-poetry
 
 # [ RUBY ON RAILS ]
 libvips
