@@ -24,6 +24,7 @@ xclip
 xorg-server
 
 # [ GNOME CORE APPS ]
+baobab # disk usage analyzer
 gnome-backgrounds
 gnome-calculator
 gnome-calendar
@@ -31,8 +32,6 @@ gnome-characters
 gnome-clocks
 gnome-color-manager
 gnome-connections
-gnome-console
-gnome-contacts
 gnome-control-center
 gnome-disk-utility
 gnome-font-viewer
@@ -46,13 +45,10 @@ gnome-screenshot
 gnome-session
 gnome-settings-daemon
 gnome-shell-extensions
-gnome-software
 gnome-system-monitor
 gnome-text-editor
-gnome-tour
 gnome-user-docs
 gnome-user-share
-gnome-weather
 loupe # image viewer
 nautilus # file manager
 simple-scan # document scanner
