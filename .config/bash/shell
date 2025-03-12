@@ -30,3 +30,6 @@ shopt -s autocd
 
 # `cd` search paths, in addititon to the current directory
 CDPATH=$HOME/dev
+
+# add `~/bin` to PATH
+export PATH="./bin:$HOME/bin:$PATH"
