@@ -1,5 +1,7 @@
 {
     "editor.fontFamily": "'CaskaydiaMono Nerd Font', 'monospace', monospace",
     "editor.renderWhitespace": "all",
-    "workbench.colorTheme": "Spinel"
+    "workbench.colorTheme": "Spinel",
+    "editor.formatOnSave": true,
+    "css.format.enable": false
 }
