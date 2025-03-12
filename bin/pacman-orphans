@@ -1,6 +1,15 @@
-pacman --query --deps --unrequired --quiet
+#!/usr/bin/env bash
 
->&2 echo ""
->&2 echo "Use:"
->&2 echo "$ bin/pacman-orphans | sudo pacman -Rns -"
->&2 echo "to remove orphans"
+if [ $# -eq 0 ]; then
+  pacman -Qqd | pacman -Rsu --print -
+  echo ""
+  echo "Call with -d to actually remove them"
+fi
+
+while getopts "d" arg; do
+  case $arg in
+    d)
+      pacman -Qqd | pacman -Rsu -
+      ;;
+  esac
+done

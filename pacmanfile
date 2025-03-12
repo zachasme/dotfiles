@@ -1,88 +1,74 @@
 # [ BARE NECESSITIES ]
 base
 base-devel
-git
 bind # `host` command
+cups
+git
 linux
 linux-firmware
+lvm2
 man-db
 man-pages
 openssh
+pacman-contrib
+paru-bin
 reflector
 unzip
 vim
 wget
-wpa_supplicant
 zip
 
 # [ GNOME / XORG ]
 gdm
-gnome-shell
-networkmanager
-ulauncher
-xclip
-xorg-server
-
-# [ GNOME CORE APPS ]
-baobab # disk usage analyzer
 gnome-backgrounds
-gnome-calculator
-gnome-calendar
-gnome-characters
-gnome-clocks
-gnome-color-manager
-gnome-connections
 gnome-control-center
-gnome-disk-utility
-gnome-font-viewer
-gnome-keyring
-gnome-logs
-gnome-maps
-gnome-menus
-gnome-music
-gnome-remote-desktop
-gnome-screenshot
-gnome-session
-gnome-settings-daemon
+gnome-shell
 gnome-shell-extensions
-gnome-system-monitor
-gnome-text-editor
-gnome-user-docs
-gnome-user-share
-loupe # image viewer
 nautilus # file manager
-simple-scan # document scanner
-snapshot # camera
+networkmanager
+seahorse # keyring manager
+ulauncher
+xorg-server
 
 # [ SHELL EXTRAS ]
 bash-completion
 ttf-cascadia-mono-nerd
 
 # [ SHELL TOOLS ]
+aria2
 bat # `cat(1)` clone with syntax highlighting and git integration
 eza # `ls(1)`` replacement with color and icons
 fzf # fuzzy finding files and history
+ranger
 zellij
 
 # [ DESKTOP APPS ]
 1password
 alacritty
+anki-bin
 chromium
 discord
 firefox
+gimp
+libreoffice-still
+obs-studio
+signal-desktop
+steam
 thunderbird
 vlc
 
 # [ DEVELOPMENT TOOLS ]
-clang
 cmake
 docker
 docker-buildx
 github-cli
 heroku-cli # (AUR)
+jdk-openjdk
 mise
 neovim
 postgresql
+postgresql-old-upgrade
+postgis
 sqlitebrowser
 stripe-cli-bin # (AUR)
 visual-studio-code-bin
