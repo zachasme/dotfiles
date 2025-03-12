@@ -12,6 +12,7 @@ zip
 gdm
 gnome-shell
 nautilus
+network-manager
 xorg-server
 
 # [ SHELL EXTRAS ]
