@@ -2,18 +2,28 @@
 base
 base-devel
 git
+bind # `host` command
+linux
+linux-firmware
 openssh
+reflector
 unzip
 vim
 wget
+wpa_supplicant
 zip
 
 # [ GNOME / XORG ]
 gdm
 gnome-shell
-nautilus
-network-manager
+networkmanager
+ulauncher
+xclip
 xorg-server
+
+# [ GNOME CORE APPS ]
+nautilus # gnome file manager
+totem # gnome video player
 
 # [ SHELL EXTRAS ]
 bash-completion
@@ -31,12 +41,14 @@ alacritty
 chromium
 discord
 firefox
-steam
 thunderbird
 vlc
 
 # [ DEVELOPMENT TOOLS ]
+clang
+cmake
 docker
+docker-buildx
 github-cli
 heroku-cli # (AUR)
 mise
@@ -45,3 +57,11 @@ postgresql
 sqlitebrowser
 stripe-cli-bin # (AUR)
 visual-studio-code-bin
+
+# [ NODEJS ]
+nodejs
+npm
+yarn
+
+# [ RUBY ON RAILS ]
+libvips
