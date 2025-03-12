@@ -1,0 +1,6 @@
+pacman --query --deps --unrequired --quiet
+
+>&2 echo ""
+>&2 echo "Use:"
+>&2 echo "$ bin/pacman-orphans | sudo pacman -Rns -"
+>&2 echo "to remove orphans"
