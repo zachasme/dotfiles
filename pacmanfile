@@ -24,6 +24,7 @@ gnome-backgrounds
 gnome-control-center
 gnome-shell
 gnome-shell-extensions
+gnome-shell-extension-blur-my-shell
 nautilus # file manager
 networkmanager
 seahorse # keyring manager
