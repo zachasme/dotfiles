@@ -2,5 +2,6 @@
     "editor.renderWhitespace": "all",
     "workbench.colorTheme": "Spinel",
     "editor.formatOnSave": true,
-    "css.format.enable": false
+    "css.format.enable": false,
+    "editor.tabSize": 2
 }
