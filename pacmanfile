@@ -27,12 +27,13 @@ gnome-shell-extensions
 nautilus # file manager
 networkmanager
 seahorse # keyring manager
+ttf-cascadia-mono-nerd # monospace font
+noto-fonts # (sans) serif fonts
 ulauncher
 xorg-server
 
 # [ SHELL EXTRAS ]
 bash-completion
-ttf-cascadia-mono-nerd
 
 # [ SHELL TOOLS ]
 aria2
