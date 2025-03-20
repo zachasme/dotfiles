@@ -20,7 +20,7 @@
 [init]
 	defaultBranch = main
 [diff]
-	algorithm = histogram
+	algorithm = histogram # default meyers
 	colorMoved = plain
 	mnemonicPrefix = true
 	renames = true

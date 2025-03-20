@@ -39,6 +39,7 @@ bash-completion
 # [ SHELL TOOLS ]
 aria2
 bat # `cat(1)` clone with syntax highlighting and git integration
+btop # resource manager showing memory, CPU, disk, and network usage
 eza # `ls(1)`` replacement with color and icons
 fzf # fuzzy finding files and history
 ranger
