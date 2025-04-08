@@ -72,7 +72,6 @@ postgresql
 postgresql-old-upgrade
 postgis
 sqlitebrowser
-stripe-cli-bin # (AUR)
 visual-studio-code-bin
 
 # [ NODEJS ]
