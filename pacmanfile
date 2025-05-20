@@ -29,6 +29,8 @@ networkmanager
 seahorse # keyring manager
 ttf-cascadia-mono-nerd # monospace font
 noto-fonts # (sans) serif fonts
+noto-fonts-cjk # chinese, japanese, korean
+noto-fonts-emoji # emoji
 ulauncher
 xorg-server
 
