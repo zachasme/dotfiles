@@ -10,6 +10,7 @@
 source ~/.config/bash/aliases
 source ~/.config/bash/init
 source ~/.config/bash/shell
+source ~/.config/bash/rust
 
 export BROWSER=firefox
 export EDITOR="nvim"

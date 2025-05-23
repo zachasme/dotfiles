@@ -25,6 +25,7 @@ gnome-control-center
 gnome-shell
 gnome-shell-extensions
 gnome-shell-extension-blur-my-shell
+gst-plugin-pipewire # screen recording
 networkmanager
 seahorse # keyring manager
 ttf-cascadia-mono-nerd # monospace font
