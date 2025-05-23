@@ -3,9 +3,5 @@
   "workbench.colorTheme": "Spinel",
   "editor.formatOnSave": true,
   "css.format.enable": false,
-  "editor.tabSize": 2,
-  "rubyLsp.rubyVersionManager": {
-    "identifier": "mise",
-    "miseExecutablePath": "/usr/bin/mise"
-  }
+  "editor.tabSize": 2
 }
